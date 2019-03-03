@@ -1,3 +1,10 @@
+================================================================================================================
+'bin' function is used to convert decimat into binary
+by default, it only spit out bare min value binary value for decimat
+  ex: 1.1.1.1 --> using 'bin' funtion will only spit out 1.1.1.1
+to overcome this issue, try using 'format' method via '08b' method which adds 8-zero's to binary.
+================================================================================================================
+
 # IP convertion - decimal to binary
 ----------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------
