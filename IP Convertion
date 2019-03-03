@@ -2,4 +2,5 @@
 ipadd = input('Enter your IP: ')
 ip = ipadd.split('.')
 ip_bin = ('{0:08b}.{1:08b}.{2:08b}.{3:08b}'.format(int(ip[0]), int(ip[1]), int(ip[2]), int(ip[3])))
+print (ipadd, ' -> ', end='')
 print (ip_bin)
