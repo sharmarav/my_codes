@@ -1,1 +1,32 @@
+================================================================================================================
+'bin' function is used to convert decimat into binary
+by default, it only spit out bare min value binary value for decimat
+  ex: 1.1.1.1 --> using 'bin' funtion will only spit out 1.1.1.1
+to overcome this issue, try using 'format' method via ':08b' method which adds 8-zero's to binary.
+'.08b'is known as 'padding'
+================================================================================================================
 
+# IP convertion - decimal to binary
+----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+ipadd = input('Enter your IP: ')
+ip = ipadd.split('.')
+ip_bin = ('{0:08b}.{1:08b}.{2:08b}.{3:08b}'.format(int(ip[0]), int(ip[1]), int(ip[2]), int(ip[3])))
+print (ipadd, ' -> ', end='')
+print (ip_bin)
+
+################################################################################################################
+## METHOD 2 ##
+IP = input('Enter your IP: ')
+
+oct1 = (bin(int(IP.split('.')[0])))[2:]
+oct2 = (bin(int(IP.split('.')[1])))[2:]
+oct3 = (bin(int(IP.split('.')[2])))[2:]
+oct4 = (bin(int(IP.split('.')[3])))[2:]
+
+ip_bin = ('{}.{}.{}.{}'.format(oct1,oct2,oct3,oct4))
+
+print (IP, ' -> ', end='')
+print (ip_bin)
+
+################################################################################################################
